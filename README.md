@@ -3,6 +3,8 @@
 ## Repeating XOR Encrypt
 This is an implementation of a function which encrypts a finite string by XORing it against a repeating key and returns the hex value as a string. The length of the key is less or equal to the length of the plaintext.
 
+https://github.com/DarinGeorgievBulgaria/Security-Exercises/blob/main/RepeatingXOREncrypt.py
+
 ## Diffie-Hellman Encrypt
 This is function demonstrates how users A and B use the Diffie-Hellman (DH) key exchange protocol to share a secret key and start encrypting data. It is assumed that users A and B agreed on some DH parameters and calculated their private keys. I used keys below for examples:
 
@@ -23,7 +25,11 @@ YcrRf0q0RVzMDTnHWk1mRLVvb6av4HOSkIsk1mMogBcqV0wIBAgRCAkBn\n9zn/q8GMs7SJjZ+V
 LlPG89bB83Cn1kDRmGEdUQF3OSZWIdMAVJb1/xaR4NAhlRya\n7jZHBW5DlUF5rrmecN4A\n---
 --END PRIVATE KEY-----\n'
 
+https://github.com/DarinGeorgievBulgaria/Security-Exercises/blob/main/DHandEncrypt.py
+
 ## AES in CTR mode Encryption
 The code defines a function called AES_CTR_Encrypt that encrypts a plaintext message using AES-CTR encryption mode. The function takes a hexadecimal string key representing the encryption key, another hexadecimal string nonce_counter representing the initial value of the nonce and counter used by CTR mode, and a plaintext message data represented as a byte string.
 
 The function creates an AES-CTR cipher and encryptor using the key and nonce_counter. It then encrypts the data using the created encryptor and returns the resulting ciphertext.
+
+https://github.com/DarinGeorgievBulgaria/Security-Exercises/blob/main/AES%20CTR%20Encrypt.py
