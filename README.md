@@ -22,3 +22,8 @@ b'-----BEGIN PRIVATE KEY-----
 YcrRf0q0RVzMDTnHWk1mRLVvb6av4HOSkIsk1mMogBcqV0wIBAgRCAkBn\n9zn/q8GMs7SJjZ+V
 LlPG89bB83Cn1kDRmGEdUQF3OSZWIdMAVJb1/xaR4NAhlRya\n7jZHBW5DlUF5rrmecN4A\n---
 --END PRIVATE KEY-----\n'
+
+## AES in CTR mode Encryption
+The code defines a function called AES_CTR_Encrypt that encrypts a plaintext message using AES-CTR encryption mode. The function takes a hexadecimal string key representing the encryption key, another hexadecimal string nonce_counter representing the initial value of the nonce and counter used by CTR mode, and a plaintext message data represented as a byte string.
+
+The function creates an AES-CTR cipher and encryptor using the key and nonce_counter. It then encrypts the data using the created encryptor and returns the resulting ciphertext.
