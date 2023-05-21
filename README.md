@@ -60,3 +60,31 @@ The Task1 function in the code performs the following tasks:
 
 The code allows for customization by providing input values for various parameters such as the limits and mode of the triangular distribution, data set, simulation parameters, and thresholds for impact probability.
 The results of the calculations are stored in the results variable and printed to the console.
+https://github.com/DarinGeorgievBulgaria/Security-Exercises/blob/main/ALE.py
+
+## Linear Regression and Linear Programming
+### Description
+This code implements a linear regression and two linear programming tasks to solve optimization problems. The goal is to find optimal weights and values that satisfy certain constraints.
+The function performs the following tasks:
+
+1. Linear Regression:
+- It performs linear regression using the input data x and corresponding dependent variables y and z.
+- The regression equation is solved using the least squares method, and the resulting weights for y and z are obtained.
+- The weights are stored in weights_b and weights_d variables.
+
+2. Linear Programming Task 1:
+- It formulates a linear programming problem with constraints using the obtained weights and other input parameters.
+- The goal is to maximize the value of num5 while satisfying the constraints defined by bound_y and bound_z.
+- The linear programming problem is solved using the linprog function from the SciPy library.
+- The optimal value of num5 is stored in s_num5.
+
+3. Linear Programming Task 2:
+- It formulates another linear programming problem with different constraints using the same weights and additional input parameters.
+- The goal is to maximize a cost function defined by the c vector while satisfying constraints defined by se_bound, ml_bound, x_bound, and x_initial.
+- The linear programming problem is solved using the linprog function.
+- The optimal values for the decision variables are stored in x_i.
+- The differences between the optimal values and the initial values of the decision variables are stored in x_add.
+
+The code allows for customization by providing input values for the data matrix x, dependent variables y and z, various parameters for the linear programming tasks, and initial values for the decision variables.
+The results of the calculations are stored in the result variable and printed to the console.
+https://github.com/DarinGeorgievBulgaria/Security-Exercises/blob/main/Linear%20Programming%20and%20Regression%20.py
