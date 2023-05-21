@@ -33,3 +33,30 @@ The code defines a function called AES_CTR_Encrypt that encrypts a plaintext mes
 The function creates an AES-CTR cipher and encryptor using the key and nonce_counter. It then encrypts the data using the created encryptor and returns the resulting ciphertext.
 
 https://github.com/DarinGeorgievBulgaria/Security-Exercises/blob/main/AES%20CTR%20Encrypt.py
+
+## Annualized Loss Expectancy (ALE) Calculation
+### Description
+This code implements a set of calculations and simulations to analyze risk exposure and estimate the Annualized Loss Expectancy (ALE) for a given scenario. The code utilizes statistical distributions, such as the triangular, log-normal, and Pareto distributions, as well as the Monte Carlo method to generate probabilistic outcomes.
+
+The Task1 function in the code performs the following tasks:
+
+1. Calculates probabilities related to the Asset Value (AV):
+
+ - It uses a triangular distribution to determine the probability that the AV is no greater than a specified point (point1) and the probability that the AV is greater than another specified point (point2).
+ - It calculates the mean and median of the AV based on the triangular distribution.
+
+2. Calculates the mean and variance of a given data set:
+- It converts the input data into a numpy array and computes the mean and variance.
+
+3. Performs a Monte Carlo simulation to estimate the probability distribution of the total impact:
+- It creates log-normal and Pareto distributions to represent the impact caused by two flaws.
+- It samples from these distributions a specified number of times (num) and calculates the total impact as the sum of the samples.
+- It determines the probability that the total impact is greater than a specified point (point3) and the probability that it falls within a range defined by two points (point4 and point5).
+
+4. Calculates the Annualized Loss Expectancy (ALE):
+- It uses the median of the triangular distribution as the Single Loss Expectancy (SLE) and the probability derived from the Monte Carlo simulation as the Exposure Factor (EF).
+- It computes the Annual Rate of Occurrence (ARO) as the mean of the input data set.
+- It calculates the ALE as the product of ARO and SLE.
+
+The code allows for customization by providing input values for various parameters such as the limits and mode of the triangular distribution, data set, simulation parameters, and thresholds for impact probability.
+The results of the calculations are stored in the results variable and printed to the console.
